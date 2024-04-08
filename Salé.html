@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrir Salé</title> 
+</head>
+<body bgcolor="lightgray" text="#201615" link="green" Vlink="blue" Alink="red"><font size="4">
+    <!--formulaire recherche-->
+    <form align="right"name="search" method="post" action="traitement.html" align>
+        <label for="search">Recherche :</label><br/>
+        <input type="text" id="search" name="search" placeholder="Entrez un lieu">
+        <button type="submit">Rechercher</button>
+    </form>
+    <!--titre+images majeurs-->
+   <center>
+    <img style="height: 150px; width: 350px;" src="data:image/jpeg;base64,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" ><br/>
+    <img src="https://www.voyageway.com/wp-content/uploads/2014/10/sale-borj-adoumoue.jpg" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 1000px; height: 300px; margin: 10px; width: 500px;" alt="Visiter Salé, la voisine oubliée de Rabat : que faire à Salé ?" jsname="kn3ccd" aria-hidden="false">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Sale%2CBabMrisa.jpg" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 1440px; height: 300px; margin: 10px; width: 500px;" alt="Bab el-Mrissa — Wikipédia" jsname="kn3ccd" aria-hidden="false">
+</center>
+   <!--localisation de la région-->
+   <img align="right" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUaV0LUEdLexuP1Z14jOEqt7DVj4hmPc51Jcs6g5ZUTCwt0vVlCSkJBXVqWVeMDAehzm8_3H71xi9UQwHkeP6fgWr56BjQkbOJZsfPLUhuqGMc0046QDYMZyULcIeoUiIkNloTvEsFMDx-/s1600/Capture.PNG" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 403px; height: 250px; margin: 10px; width: 300px;" alt="Région de Rabat-Salé-Kénitra - Maroc Maps" jsname="kn3ccd" aria-hidden="false">
+    <img align="right"src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHbQ6J38WDC4VmraFKgTJhCSJ9vMIw6-PUjyposgKoj0dTEyqSieiZwgfkaRYEksC-YBl4jY8nuclFvg4LqNgxkGX-ym6-ev2cAuN7u0XxWPOUO7pFsM3D4tVTIGbm9JRiaSPy1D8XUubu/s1600/Capture.PNG" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="height: 250px; margin-top: 0%; width: 350px;" alt="Préfecture de Salé - Maroc Maps" jsname="kn3ccd" aria-hidden="false">
+      <p style="margin-top: 10px; margin-right: 700px; margin-bottom: 20px; margin-left: 40px;"><strong>Une légende&nbsp;vivante, «&nbsp;La légende des deux rives&nbsp;» compte l’histoire tumultueuse des deux villes jumelles Rabat et salé.</strong><br/><br/>Située sur l’Océan Atlantique à l’embouchure droite du Bouregreg, en face de la ville de Rabat, se dresse Salé dont l’histoire est jalonnée d’événements marquants et d’importantes péripéties. Fondée au XI<sup>ème</sup> siècle, cette ville connût un grand développement sous les dynasties Almohade (XII<sup>ème</sup> siècle) et Mérinide (XIV<sup>ème</sup> siècle).<br/><br/>Joyaux de la côte atlantique, Salé offre au visiteur un dépaysement total de par son architecture médiévale, ses monuments et édifices historiques ainsi que ses souks.</p><br/>
+    <!--description de la région-->
+    <h1>Description de la région</h1>
+    <h2>Arts et Culture :</h2>
+    <ul>
+      <li style="margin-top: 10px; margin-right: 300px; margin-bottom: 20px; margin-left: 50px;"><img style="max-width: 403px; height: 150px; margin: 10px; width: 250px;" align="right"src="https://www.visitrabat.com/wp-content/uploads/2019/06/jamaa_adam-min.jpg" alt="La Grande Mosquée" title="La Grande Mosquée"><u><b>La Grande Mosquée:</b></u> La Grande Mosquée Almohade « Jamaâ al-Aâdam », s’élève au milieu du quartier Talaâ et domine presque toute la Médina. C’est la deuxième plus vieille Mosquée du royaume après  celle d’ Al Quaraouiyine. D’une superficie de 5 070 m², la grande mosquée de Salé possède neuf portes dont la principale perce le mur de la qibla.</li><br/>
+     <li style="margin-top: 10px; margin-right: 300px; margin-bottom: 20px; margin-left: 50px;">  <img style="max-width: 403px; height: 150px; margin: 10px; width: 250px;" align="right"src="https://www.visitrabat.com/wp-content/uploads/2019/06/medersa_merinide-min.jpg" alt="La Médersa Mérinide" title="La Médersa Mérinide"><u><b>Bab Lamrissa:</b></u> Monument emblématique de Salé, Bab Lamrissa, appelée aussi Bab Mellah, est une porte fortifiée datant du XIIIe siècle. Ancienne porte maritime, elle fait partie des principales portes de l’actuelle enceinte de la médina de Salé et en est la plus imposante. Elle constitue l’une des deux portes monumentales d’un ancien arsenal maritime, bâties entre 1260 et 1270 par les mérinides.</li><br/> 
+      <li style="margin-top: 10px; margin-right: 300px; margin-bottom: 20px; margin-left: 50px;"> <img style="max-width: 403px; height: 150px; margin: 10px; width: 250px;" align="right"src="https://www.visitrabat.com/wp-content/uploads/2019/06/bab_lamrissa-min-1.jpg" alt="Bab Lamrissa" title="Bab Lamrissa"><u><b>Borj Adoumoue:</b></u> Littéralement “bastion des larmes” , il se trouve à proximité du mausolée de Sidi Ben Achir. Nommé aussi Scala Al Qadima, borj al Caïd,borj al Hassani , est  un ancien bastion qui commandait l’embouchure du Bouregreg . Elevé à la place d’une fortification ancienne, il fût restaurée par A. Fennich, qui y remploya les pierres de la Qasba Gnaoua qu’il venait d’abattre, d’où le nom de Borj Addoumoue.</li>
+  </ul>
+   
+    <h2>Loisirs :</h2>
+    <ol>
+     <img style="max-width: 403px; height: 150px; margin: 10px; width: 250px;" src="https://www.visitrabat.com/wp-content/uploads/2019/05/parapente.jpg" alt="Parapente" title="Parapente"><li  style="margin-top: 10px; margin-right: 300px; margin-bottom: 20px; margin-left: 50px;"><u><i>Parapente:</i></u> Situé à proximité de Rabat et de Salé, surplombant la vallée du Bouregreg, l’Oulja est un site école qui bénéficie d’un ensoleillement et de conditions aérologiques exceptionnelles pour l’apprentissage du parapente. Ici on vole 300 jours par an ! L’école Marocaine de Vol Libre vous accueille toute l’année et vous propose des stages de parapente tous niveaux ainsi que des baptêmes biplace.</li>
+     <img style="max-width: 403px; height: 150px; margin: 10px; width: 250px;" src="https://www.visitrabat.com/wp-content/uploads/2019/05/Le-Royal-Club-Equestre-du-Lac1-min-1.jpg" alt="Le Royal Club Equestre du Lac" title="Le Royal Club Equestre du Lac"> <li  style="margin-top: 10px; margin-right: 300px; margin-bottom: 20px; margin-left: 50px;"><u><i>Le Royal Club Equestre du Lac:</i></u> Situé à Sala Al Jadida près de la forêt de la Maamora, le Royal Club Équestre du Lac a l’avantage d’offrir la possibilité de faire des randonnées dans la nature encadrées par des moniteurs confirmés.</li>
+    </ol>
+    <h2>Parcs et jardins:</h2>
+    <ul>
+      <li style="margin-top: 10px; margin-right: 300px; margin-bottom: 20px; margin-left: 50px;"> <u><b>Forêt de la Maamora:</b></u>Entre Rabat et Kénitra, sur un plateau qui s’étend de l’océan jusqu’ à 80 km à l’intérieur des terres, s’étendent les 133 000 hectares de la forêt Maâmora : la première forêt de chênes-lièges au monde. Poumon vert d’une capitale elle–même verdoyante. C’est un lieu de promenade et de randonnées exceptionnel. Inauguré en 2006, un éco-musée permet de comprendre l’écosystème et d’apprendre les gestes nécessaires à sa préservation.</li><img style="max-width: 403px; height: 150px; margin: 10px; width: 250px;" src="https://www.visitrabat.com/wp-content/uploads/2019/05/foret-maamora-min.jpg" alt="Forêt de la Maamora" title="Forêt de la Maamora"><br/>
+      <li style="margin-top: 10px; margin-right: 300px; margin-bottom: 20px; margin-left: 50px;"> <u><b>Jardin d’Essais Botaniques:</b></u>S’étendant sur une superficie d’environ 17 Ha, contenant une richesse floristique estimée à plus de 600 espèces, et plus de 1000 variétés, le jardin d’essais est incontestablement le plus grand jardin public de Rabat. Il a inspiré la création des jardins botaniques de Marrakech (25 Ha et celui de Meknès (30 Ha)) Il a été créé en 1914 par Jean Claude Nicolas Forestier et dessiné par un tracé rigoureux.</li> <img style="max-width: 403px; height: 150px; margin: 10px; width: 250px;" src="https://www.visitrabat.com/wp-content/uploads/2019/05/botanical-garden-experiments.jpg" alt="Jardin d’Essais Botaniques" title="Jardin d’Essais Botaniques">
+    </ul>
+    <!--statistique de la région-->
+     <!--tableau 1-->
+    <table border="4" align="right" style="margin-top: 150px;" class="wikitable sortable centre jquery-tablesorter" style="text-align:center; background: #FFFFFF; color:#000000;">
+<caption><font color="purple">Données climatiques de Rabat-Salé</font></caption>
+<thead><tr><th scope="col" style="background-color:#DFD" class="unsortable">Mois</th>
+<th scope="col" class="unsortable" style="background-color:#DFD"><abbr title="janvier">jan.</abbr></th>
+<th scope="col" class="unsortable" style="background-color:#DFD"><abbr title="février">fév.</abbr></th>
+<th scope="col" class="unsortable" style="background-color:#DFD">mars</th>
+<th scope="col" class="unsortable" style="background-color:#DFD">avril</th>
+<th scope="col" class="unsortable" style="background-color:#DFD">mai</th>
+<th scope="col" class="unsortable" style="background-color:#DFD">juin</th>
+<th scope="col" class="unsortable" style="background-color:#DFD"><abbr title="juillet">jui.</abbr></th>
+<th scope="col" class="unsortable" style="background-color:#DFD">août</th>
+<th scope="col" class="unsortable" style="background-color:#DFD"><abbr title="septembre">sep.</abbr></th>
+<th scope="col" class="unsortable" style="background-color:#DFD"><abbr title="octobre">oct.</abbr></th>
+<th scope="col" class="unsortable" style="background-color:#DFD"><abbr title="novembre">nov.</abbr></th>
+<th scope="col" class="unsortable" style="background-color:#DFD"><abbr title="décembre">déc.</abbr></th>
+<th scope="col" class="unsortable" style="background-color:#DFD">année</th>
+</tr></thead><tbody><tr>
+<th scope="row" style="background-color:#DFD; text-align:left;">Température minimale moyenne (°C)</th>
+<td style="background-color:#FFFFC0">8</td>
+<td style="background-color:#FFFFC0">9</td>
+<td style="background-color:#FFFFC0">9</td>
+<td style="background-color:#FFFFC0">10</td>
+<td style="background-color:#FFFF80">13</td>
+<td style="background-color:#FFFF80">15</td>
+<td style="background-color:#FFFF80">18</td>
+<td style="background-color:#FFFF80">18</td>
+<td style="background-color:#FFFF80">17</td>
+<td style="background-color:#FFFF80">14</td>
+<td style="background-color:#FFFFC0">11</td>
+<td style="background-color:#FFFFC0">9</td>
+<td><b>14,2</b></td>
+</tr>
+<tr>
+<th scope="row" style="background-color:#DFD; text-align:left;">Température moyenne (°C)</th>
+<td style="background-color:#FFFF80">12,5</td>
+<td style="background-color:#FFFF80">13,3</td>
+<td style="background-color:#FFFF80">14,7</td>
+<td style="background-color:#FFFF80">16,4</td>
+<td style="background-color:#FFFF80">18</td>
+<td style="background-color:#FFC040">20,5</td>
+<td style="background-color:#FFC040">22,5</td>
+<td style="background-color:#FFC040">23</td>
+<td style="background-color:#FFC040">21,9</td>
+<td style="background-color:#FFFF80">19,7</td>
+<td style="background-color:#FFFF80">16,4</td>
+<td style="background-color:#FFFF80">13,6</td>
+<td><b>17,7</b></td>
+</tr>
+<tr>
+<th scope="row" style="background-color:#DFD; text-align:left;">Température maximale moyenne (°C)</th>
+<td style="background-color:#FFFF80">17</td>
+<td style="background-color:#FFFF80">18</td>
+<td style="background-color:#FFFF80">19</td>
+<td style="background-color:#FFC040">20</td>
+<td style="background-color:#FFC040">22</td>
+<td style="background-color:#FFC040">24</td>
+<td style="background-color:#FFC040">27</td>
+<td style="background-color:#FFC040">27</td>
+<td style="background-color:#FFC040">26</td>
+<td style="background-color:#FFC040">24</td>
+<td style="background-color:#FFC040">21</td>
+<td style="background-color:#FFFF80">18</td>
+<td><b>25</b></td>
+</tr>
+<tr>
+<th scope="row" style="background-color:#DFD; text-align:left;">Ensoleillement (h)</th>
+<td style="background-color:#FFC040">180</td>
+<td style="background-color:#FFC040">182</td>
+<td style="background-color:#FF8000">232</td>
+<td style="background-color:#FF8000">255</td>
+<td style="background-color:#FF8000">291</td>
+<td style="background-color:#FF8000">288</td>
+<td style="background-color:#FF8000">315</td>
+<td style="background-color:#FF8000">307</td>
+<td style="background-color:#FF8000">261</td>
+<td style="background-color:#FF8000">235</td>
+<td style="background-color:#FFC040">191</td>
+<td style="background-color:#FFC040">181</td>
+<td><b>3&nbsp;234</b></td>
+</tr>
+<tr>
+<th scope="row" style="background-color:#DFD; text-align:left;">Précipitations (mm)</th>
+<td style="background-color:#DCF0FF">76</td>
+<td style="background-color:#DCF0FF">70</td>
+<td style="background-color:#DCF0FF">62</td>
+<td style="background-color:#DCF0FF">65</td>
+<td style="background-color:#FFFFFF">21</td>
+<td style="background-color:#FFFFFF">6</td>
+<td style="background-color:#FFFFFF">1</td>
+<td style="background-color:#FFFFFF">1</td>
+<td style="background-color:#FFFFFF">5</td>
+<td style="background-color:#FFFFFF">46</td>
+<td style="background-color:#DCF0FF">90</td>
+<td style="background-color:#B4C8FF">108</td>
+<td><b>551</b></td>
+</tr>
+</tbody><tfoot></tfoot></table>
+<!--tableau 2-->
+    <h1>Statistiques de la région</h1>
+    <caption align="center"><font color="purple">Informations sur la région</font></caption>
+    <table border="3"><tbody><tr><th>Villes et villages</th><td>113</td></tr><tr><th>Nombre d'habitants</th><td>4 546 190 habitants<br><a href="https://mapcarta.com/fr/17421204" title="Salé">Salé</a> <em class="grey">850 403 habitants</em><br><a href="https://mapcarta.com/fr/25436786" title="Ait Ichou">Ait Ichou</a> <em class="grey">1 809 habitants</em></td></tr><tr><th>Superficie</th><td>1 183 km²<br><a href="https://mapcarta.com/fr/17434820" title="Kénitra">Kénitra</a> <em class="grey">650 km²</em><br><a href="https://mapcarta.com/fr/25437954">Harhoura</a> <em class="grey">13,3 km²</em></td></tr><tr><th>Densité de population</th><td>3 843,0 /km²<br><a href="https://mc.maptons.com/142868" title="Témara">Témara</a> <em class="grey">9 342 /km²</em><br><a href="https://mapcarta.com/fr/36169444" title="Marchouch">Marchouch</a> <em class="grey">43,4 /km²</em></td></tr><tr><th>Altitude moyenne</th><td>220 m (722 ft)</td></tr><tr><th>Fuseau horaire</th><td><abbr title="Temps Universel Coordonné">UTC</abbr> +1:00</td></tr><tr><th>Horaire</th><td id="hor">10:27:01 - 30 Mars 2024</td></tr></tbody></table>
+  <!--points d'intérêts-->
+  <h1>Points d'intérêts</h1>
+  <ul>
+    <li><a href="https://mapcarta.com/fr/W445697090">Dawliz Resort et Spa</a> - Hôtel-spa 5 étoiles proposant un dépaysement rare, une plongée dans la culture &l’art.</li>
+    <li><a href="https://mapcarta.com/fr/N2907763140">L'enceinte de la médina de Salé</a> - Immersion dans la médina de Salé, le plus grand quartier fortifié du Maroc.</li>
+    <li><a href="https://mapcarta.com/fr/N5890468189">Dar Zaki</a> - La cuisine marocaine est bien préparée à Dar Zaki.</li>
+    <li><a href="https://www.google.com/maps/place/Club+Olympique+Marocain+Sports+Nautiques/@34.0315729,-6.8274136,17z/data=!3m1!4b1!4m6!3m5!1s0xda76bf3a1b95337:0xa1712f9af229d323!8m2!3d34.0315685!4d-6.8248387!16s%2Fg%2F11t40s0kng?hl=fr&entry=ttu">Club Olympique Marocain Nautique</a> - une balade en kayak dans l'estuaire du Bouregreg.</li>
+    <li><a href="https://mapcarta.com/fr/W406450949">Jardins exotiques de Bouknadel</a> - Un jardin exotique très intéressant avec un petit vivarium présentant des reptiles du sud marocain.</li>
+</body>
+</html>

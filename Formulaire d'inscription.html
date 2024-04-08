@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrir Salé</title> 
+</head>
+<body bgcolor="lightgray" text="#201615" link="green" Vlink="blue" Alink="red"><font size="4">
+	<h1>Formulaire d'inscription pour la visite</h1>
+    <form name="Formulaire d'inscription pour visiter Salé" method="post" action="traitement.html">
+        <label for="fullname">Nom &amp; Prénom :</label><br/>
+        <input type="text" id="fullname" name="fullname" required=""><br/>
+        <label for="email">Email :</label><br/>
+        <input type="email" id="email" name="email" required=""><br/>
+        <label for="address">Adresse :</label><br/>
+        <input type="text" id="address" name="address" required=""><br/>
+        <label for="visit-date">Date de visite :</label><br/>
+        <input type="date" id="visit-date" name="visit-date" required=""><br/>
+        <label for="interests">Choix de visites :</label><br/>
+        <select>
+                <option selected value="Dawliz Resort et Spa">Dawliz Resort et Spa</option>
+                <option value="L'enceinte de la médina de Salé">L'enceinte de la médina de Salé</option>
+                <option value="Dar Zaki">Dar Zaki</option>
+                <option value="Club Olympique Marocain Nautique">Club Olympique Marocain Nautique</option>
+                <option value="Jardins exotiques de Bouknadel">Jardins exotiques de Bouknadel</option>
+        </select><br/>
+            <button type="submit">Envoyer</button><br/>
+            <button type="reset">Réinitialiser</button><br/>
+            <button id="welcome-button">Bienvenue !</button>
+    </form>
+  </ul>
+</body>
+</html>
